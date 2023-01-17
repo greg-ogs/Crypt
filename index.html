@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+   
+  <textarea cols="130" rows="30" id="menssage" class="textArea" placeholder="Type your text"></textarea>
+
+  <p>Click the button to display the text encrypted.</p>
+
+  <button onclick="getDataE()">Encriptar</button>
+
+  <button onclick="getDataU()">Desencriptar</button>
+
+  <p id="displayText"></p>
+
+  <script>
+    function getDataE() {
+      var x = document.getElementById("menssage").value;
+      document.getElementById("displayText").innerHTML = x;
+      console.log(x)
+      let a = new String(x)
+      
+    }
+
+    function getDataU() {
+      var x = document.getElementById("menssage").value;
+      document.getElementById("displayText").innerHTML = x;
+      console.log(x)
+      let a = new String(x)
+      
+    }
+  </script>
+
+</body>
+</html>
