@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  </head>
 <body>
-   
-  <textarea cols="130" rows="30" id="menssage" class="textArea" placeholder="Type your text"></textarea>
+  
+  <section class="textArea">
+    <textarea cols="130" rows="20" id="menssage" class="textArea" placeholder="Type your text"></textarea>
+  </section>  
 
-  <p>Click the button to display the text encrypted.</p>
+  <section class="buttons">
+    <p>Click the button to display the text encrypted.</p>
 
-  <button onclick="getDatatoE()">Encriptar</button>
+    <button onclick="getDatatoE()">Encriptar</button>
 
-  <button onclick="getDatatoU()">Desencriptar</button>
-
-  <p id="displayText"></p>
+    <button onclick="getDatatoU()">Desencriptar</button>
+  </section>
+  <section class="displayText">
+    <p id="displayText"></p>
+  </section>
 
   <script>
     function getDatatoE() {
@@ -45,10 +60,34 @@
     }
 
     function getDatatoU() {
+      var toU = ""
       var x = document.getElementById("menssage").value;
+      console.log(x)
       let a = new String(x)
       leng = a.length;
-
+      for (var i = 0; i < leng; i++) {
+        switch(a[i]){
+          case "a":
+            toU = toU + "ai";
+            break;
+          case "e":
+            toU = toU + "enter";
+            break;
+          case "i":
+            toU = toU + "imes";
+            break;
+          case "o":
+            toU = toU + "ober";
+            break;
+          case "u":
+            toU = toU + "ufat";
+            break;
+          default:
+            toU = toU +a[i];
+        } 
+      }
+      console.log(toE);
+      document.getElementById("displayText").innerHTML = toE;
     }
   </script>
 

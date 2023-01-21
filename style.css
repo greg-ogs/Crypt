@@ -1,6 +1,24 @@
-.textArea #menssage{
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.textArea{
     width: 100%;
-    display: inline-block;
-    border-color: aliceblue;
-    border-radius: 10px;
+    height: 65%;
+}
+
+.textArea #menssage{
+    width: 80%;
+    height: 60%;
+    margin: 2%;
+    border-color: white;
+    outline: none;
+}
+
+.displayText{
+    width: 15%;
+    height: 95%;
+    position: absolute;
+    top: 3%;
+    left: 85%;
 }
