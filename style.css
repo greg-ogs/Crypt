@@ -95,7 +95,7 @@ body{
     padding: 2%;
 }
 
-@media (max-width: 480px){
+@media (max-width: 720px){
 
     .textArea #menssage{
         width: 90%;
