@@ -94,3 +94,47 @@ body{
     margin: 10% 3% 1% 5%;
     padding: 2%;
 }
+
+@media (max-width: 480px){
+
+    .textArea #menssage{
+        width: 90%;
+        height: 40%;
+        top: 0;
+        left: 0;
+    }
+
+    .textArea #displayText{
+        width: 90%;
+        height: 30%;
+        top: 55%;
+        left: 1%;
+    }
+
+    #nothing{
+        width: 60%;
+        height: 30%;
+        top: 55%;
+        left: 15%;
+    }
+
+    .buttons{
+        width: 70%;
+        height: 10%;
+        top: 40%;
+        left: 17%;
+    }
+
+    .buttons #u{
+        font-size: 1.25rem;
+    }
+    
+    .buttons #e{
+        font-size: 1.25rem;
+    }
+
+    .buttons p{
+        font-size: 0.65em;
+        text-align: left;
+    }
+}
