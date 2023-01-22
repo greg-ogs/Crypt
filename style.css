@@ -3,7 +3,21 @@ body{
     background-color: #E5E5E5;
 }
 
+::placeholder {
+    color: #0A3871;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #0A3871;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #0A3871;
+  }
+
 .textArea #menssage{
+    color: #0A3871;
     width: 60%;
     height: 60%;
     position: absolute;
@@ -17,9 +31,29 @@ body{
     font-size: 1.5em;
 }
 
+.textArea #menssage:active{
+    color: #;
+}
+
 .textArea #displayText{
     width: 17%;
     height: 75%;
+    position: absolute;
+    top: 2%;
+    left: 75%;
+    margin: 2%;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 20px;
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: #ffffff;
+}
+
+#nothing{
+    width: 17%;
+    height: 60%;
     position: absolute;
     top: 2%;
     left: 75%;

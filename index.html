@@ -26,6 +26,7 @@
   <section class="textArea">
     <textarea cols="130" rows="10" id="displayText" placeholder="Here is your text"></textarea>
   </section>
+  <img src="1.png" id="nothing">
 
   <script>
     function getDatatoE() {
@@ -57,6 +58,7 @@
       }
       console.log(toE);
       document.getElementById("displayText").value = toE;
+      document.getElementById("nothing").style.display = "none";
     }
 
     function getDatatoU() {
@@ -88,6 +90,7 @@
       }
       console.log(toE);
       document.getElementById("displayText").innerHTML = toE;
+      document.getElementById("nothing").style.display = "none";
     }
   </script>
 
