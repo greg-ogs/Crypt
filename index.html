@@ -62,7 +62,7 @@
     }
 
     function getDatatoU() {
-      var toU = ""
+      var toE = ""
       var x = document.getElementById("menssage").value;
       console.log(x)
       let a = new String(x)
@@ -70,26 +70,26 @@
       for (var i = 0; i < leng; i++) {
         switch(a[i]){
           case "a":
-            toU = toU + "ai";
+            toE = toE + "ai";
             break;
           case "e":
-            toU = toU + "enter";
+            toE = toE + "enter";
             break;
           case "i":
-            toU = toU + "imes";
+            toE = toE + "imes";
             break;
           case "o":
-            toU = toU + "ober";
+            toE = toE + "ober";
             break;
           case "u":
-            toU = toU + "ufat";
+            toE = toE + "ufat";
             break;
           default:
-            toU = toU +a[i];
+            toE = toE +a[i];
         } 
       }
       console.log(toE);
-      document.getElementById("displayText").innerHTML = toE;
+      document.getElementById("displayText").value = toE;
       document.getElementById("nothing").style.display = "none";
     }
   </script>
