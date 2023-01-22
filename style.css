@@ -105,10 +105,11 @@ body{
     }
 
     .textArea #displayText{
-        width: 90%;
+        width: 85%;
         height: 30%;
         top: 55%;
         left: 1%;
+        padding: 4%;
     }
 
     #nothing{
