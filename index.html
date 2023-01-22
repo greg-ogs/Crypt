@@ -59,6 +59,7 @@
       console.log(toE);
       document.getElementById("displayText").value = toE;
       document.getElementById("nothing").style.display = "none";
+      var toE = ""
     }
 
     function getDatatoU() {
@@ -70,19 +71,24 @@
       for (var i = 0; i < leng; i++) {
         switch(a[i]){
           case "a":
-            toE = toE + "ai";
+            toE = toE + "a";
+            i = i + 1;
             break;
           case "e":
-            toE = toE + "enter";
+            toE = toE + "e";
+            i = i + 4;
             break;
           case "i":
-            toE = toE + "imes";
+            toE = toE + "i";
+            i = i + 3;
             break;
           case "o":
-            toE = toE + "ober";
+            toE = toE + "o";
+            i = i + 3;
             break;
           case "u":
-            toE = toE + "ufat";
+            toE = toE + "u";
+            i = i + 3;
             break;
           default:
             toE = toE +a[i];
@@ -91,6 +97,7 @@
       console.log(toE);
       document.getElementById("displayText").value = toE;
       document.getElementById("nothing").style.display = "none";
+      var toE = ""
     }
   </script>
 
