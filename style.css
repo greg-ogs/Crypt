@@ -31,10 +31,6 @@ body{
     font-size: 1.5em;
 }
 
-.textArea #menssage:active{
-    color: #;
-}
-
 .textArea #displayText{
     width: 17%;
     height: 75%;
